@@ -6,6 +6,9 @@ package co.edu.javeriana.as.boot.spring.personapp.domain.model;
 
 import lombok.Data;
 
+import java.awt.*;
+import java.util.List;
+
 /**
  *
  * @author aasanchez
@@ -17,4 +20,5 @@ public class Persona {
     private String apellido;
     private Genero genero;
     private Integer edad;
+    private List<Estudios> estudios;
 }
