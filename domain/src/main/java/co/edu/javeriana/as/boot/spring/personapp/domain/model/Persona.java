@@ -13,4 +13,8 @@ import lombok.Data;
 @Data
 public class Persona {
     private Integer cc;
+    private String nombre;
+    private String apellido;
+    private Genero genero;
+    private Integer edad;
 }
