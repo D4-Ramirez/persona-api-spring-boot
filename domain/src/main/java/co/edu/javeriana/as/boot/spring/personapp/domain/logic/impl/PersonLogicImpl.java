@@ -8,6 +8,7 @@ import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PersonLogic;
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
