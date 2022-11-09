@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author aasanchez
  */
-public interface PersonaApp {
+public interface PersonApp {
     public List<Person> findAll();
     public Person findById(Integer cc);
     public void create(Person persona);

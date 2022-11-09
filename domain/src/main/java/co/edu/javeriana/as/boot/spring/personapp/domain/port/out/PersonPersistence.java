@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author aasanchez
  */
-public interface PersonaPersistence {
+public interface PersonPersistence {
     public List<Person> findAll();
     public Person findById(Integer cc);
     public void create(Person persona);

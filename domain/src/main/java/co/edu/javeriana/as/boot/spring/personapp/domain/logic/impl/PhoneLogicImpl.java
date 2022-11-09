@@ -4,5 +4,5 @@ import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PhoneLogic;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TelefonoLogicImpl implements PhoneLogic {
+public class PhoneLogicImpl implements PhoneLogic {
 }

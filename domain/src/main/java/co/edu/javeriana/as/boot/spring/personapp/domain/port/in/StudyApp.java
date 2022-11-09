@@ -4,7 +4,7 @@ import co.edu.javeriana.as.boot.spring.personapp.domain.model.Study;
 
 import java.util.List;
 
-public interface EstudiosApp {
+public interface StudyApp {
     public List<Study> findAll();
     public Study findById(Integer cc);
     public void create(Study estudios);

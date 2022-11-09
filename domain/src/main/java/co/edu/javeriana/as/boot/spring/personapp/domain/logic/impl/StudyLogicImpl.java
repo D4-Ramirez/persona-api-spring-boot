@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EstudiosLogicImpl implements StudyLogic {
+public class StudyLogicImpl implements StudyLogic {
 
     @Override
     public List<Study> findAll() {

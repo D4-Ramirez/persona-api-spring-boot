@@ -4,17 +4,44 @@
  */
 package co.edu.javeriana.as.boot.spring.personapp.rest.adapter;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.port.in.PersonaApp;
+import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
+import co.edu.javeriana.as.boot.spring.personapp.domain.port.in.PersonApp;
+
+import java.util.List;
 
 /**
  *
  * @author aasanchez
  */
-public class PersonaAppAdapter implements PersonaApp{
+public class PersonaAppAdapter implements PersonApp {
 
     @Override
-    public String consultar(Integer cc) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public List<Person> findAll() {
+        return null;
     }
-    
+
+    @Override
+    public Person findById(Integer cc) {
+        return null;
+    }
+
+    @Override
+    public void create(Person persona) {
+
+    }
+
+    @Override
+    public void delete(Person persona) {
+
+    }
+
+    @Override
+    public void delete(Integer cc) {
+
+    }
+
+    @Override
+    public void update(Person persona) {
+
+    }
 }

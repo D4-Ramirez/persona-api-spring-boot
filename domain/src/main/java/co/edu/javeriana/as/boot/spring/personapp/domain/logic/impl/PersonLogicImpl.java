@@ -12,6 +12,6 @@ import org.springframework.stereotype.Service;
  * @author aasanchez
  */
 @Service
-public class PersonaLogicImpl implements PersonLogic {
+public class PersonLogicImpl implements PersonLogic {
     
 }

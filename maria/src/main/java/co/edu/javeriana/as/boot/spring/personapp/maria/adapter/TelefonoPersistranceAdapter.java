@@ -1,11 +1,11 @@
 package co.edu.javeriana.as.boot.spring.personapp.maria.adapter;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Phone;
-import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.TelefonoPersistence;
+import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.PhonePersistence;
 
 import java.util.List;
 
-public class TelefonoPersistranceAdapter implements TelefonoPersistence {
+public class TelefonoPersistranceAdapter implements PhonePersistence {
     @Override
     public List<Phone> findAll() {
         return null;

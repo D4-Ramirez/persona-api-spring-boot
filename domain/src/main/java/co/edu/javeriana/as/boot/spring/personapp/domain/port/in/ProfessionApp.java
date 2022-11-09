@@ -4,7 +4,7 @@ import co.edu.javeriana.as.boot.spring.personapp.domain.model.Profession;
 
 import java.util.List;
 
-public interface ProfesionApp {
+public interface ProfessionApp {
     public List<Profession> findAll();
     public Profession findById(Integer id);
     public void create(Profession profesion);

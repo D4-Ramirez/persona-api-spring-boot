@@ -1,10 +1,10 @@
-package co.edu.javeriana.as.boot.spring.personapp.domain.port.out;
+package co.edu.javeriana.as.boot.spring.personapp.domain.port.in;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Phone;
 
 import java.util.List;
 
-public interface TelefonoPersistence {
+public interface PhoneApp {
     public List<Phone> findAll();
     public Phone findById(Integer num);
     public void create(Phone telefono);

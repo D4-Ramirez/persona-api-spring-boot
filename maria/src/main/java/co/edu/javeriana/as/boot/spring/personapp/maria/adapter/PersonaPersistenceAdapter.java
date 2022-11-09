@@ -5,14 +5,14 @@
 package co.edu.javeriana.as.boot.spring.personapp.maria.adapter;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
-import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.PersonaPersistence;
+import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.PersonPersistence;
 import java.util.List;
 
 /**
  *
  * @author aasanchez
  */
-public class PersonaPersistenceAdapter implements PersonaPersistence{
+public class PersonaPersistenceAdapter implements PersonPersistence {
 
     @Override
     public List<Person> findAll() {
