@@ -18,5 +18,30 @@ public class PersonaPersistenceAdapter implements PersonaPersistence{
     public List<Persona> findAll() {
         return null;
     }
-    
+
+    @Override
+    public Persona findById(Integer cc) {
+        return null;
+    }
+
+    @Override
+    public void create(Persona persona) {
+
+    }
+
+    @Override
+    public void delete(Persona persona) {
+
+    }
+
+    @Override
+    public void delete(Integer cc) {
+
+    }
+
+    @Override
+    public void update(Persona persona) {
+
+    }
+
 }

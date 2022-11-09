@@ -12,5 +12,10 @@ import java.util.List;
  * @author aasanchez
  */
 public interface PersonaPersistence {
-    public List<Persona> findAll();    
+    public List<Persona> findAll();
+    public Persona findById(Integer cc);
+    public void create(Persona persona);
+    public void delete(Persona persona);
+    public void delete(Integer cc);
+    public void update(Persona persona);
 }
