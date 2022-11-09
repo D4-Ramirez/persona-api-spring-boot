@@ -8,6 +8,6 @@ package co.edu.javeriana.as.boot.spring.personapp.domain.logic;
  *
  * @author aasanchez
  */
-public interface PersonaLogic {
+public interface PersonLogic {
     
 }

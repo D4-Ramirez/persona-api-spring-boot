@@ -1,4 +1,4 @@
 package co.edu.javeriana.as.boot.spring.personapp.domain.logic;
 
-public interface ProfesionLogic {
+public interface ProfessionLogic {
 }

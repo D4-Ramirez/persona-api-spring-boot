@@ -1,8 +1,8 @@
 package co.edu.javeriana.as.boot.spring.personapp.domain.logic.impl;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.logic.TelefonoLogic;
+import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PhoneLogic;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TelefonoLogicImpl implements TelefonoLogic {
+public class TelefonoLogicImpl implements PhoneLogic {
 }

@@ -4,7 +4,7 @@
  */
 package co.edu.javeriana.as.boot.spring.personapp.domain.logic.impl;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PersonaLogic;
+import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PersonLogic;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,6 +12,6 @@ import org.springframework.stereotype.Service;
  * @author aasanchez
  */
 @Service
-public class PersonaLogicImpl implements PersonaLogic{
+public class PersonaLogicImpl implements PersonLogic {
     
 }
