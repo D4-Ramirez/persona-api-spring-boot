@@ -1,28 +1,28 @@
 package co.edu.javeriana.as.boot.spring.personapp.maria.adapter;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.model.Estudios;
+import co.edu.javeriana.as.boot.spring.personapp.domain.model.Study;
 import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.EstudiosPersistence;
 
 import java.util.List;
 
 public class EstudiosPersistanceAdapter implements EstudiosPersistence {
     @Override
-    public List<Estudios> findAll() {
+    public List<Study> findAll() {
         return null;
     }
 
     @Override
-    public Estudios findById(Integer cc) {
+    public Study findById(Integer cc) {
         return null;
     }
 
     @Override
-    public void create(Estudios estudios) {
+    public void create(Study estudios) {
 
     }
 
     @Override
-    public void delete(Estudios estudios) {
+    public void delete(Study estudios) {
 
     }
 
@@ -32,7 +32,7 @@ public class EstudiosPersistanceAdapter implements EstudiosPersistence {
     }
 
     @Override
-    public void update(Estudios estudios) {
+    public void update(Study estudios) {
 
     }
 }

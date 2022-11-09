@@ -4,7 +4,7 @@
  */
 package co.edu.javeriana.as.boot.spring.personapp.domain.port.out;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.model.Persona;
+import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
 import java.util.List;
 
 /**
@@ -12,10 +12,10 @@ import java.util.List;
  * @author aasanchez
  */
 public interface PersonaPersistence {
-    public List<Persona> findAll();
-    public Persona findById(Integer cc);
-    public void create(Persona persona);
-    public void delete(Persona persona);
+    public List<Person> findAll();
+    public Person findById(Integer cc);
+    public void create(Person persona);
+    public void delete(Person persona);
     public void delete(Integer cc);
-    public void update(Persona persona);
+    public void update(Person persona);
 }

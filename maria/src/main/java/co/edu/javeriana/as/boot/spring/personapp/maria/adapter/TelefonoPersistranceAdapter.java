@@ -1,28 +1,28 @@
 package co.edu.javeriana.as.boot.spring.personapp.maria.adapter;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.model.Telefono;
+import co.edu.javeriana.as.boot.spring.personapp.domain.model.Phone;
 import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.TelefonoPersistence;
 
 import java.util.List;
 
 public class TelefonoPersistranceAdapter implements TelefonoPersistence {
     @Override
-    public List<Telefono> findAll() {
+    public List<Phone> findAll() {
         return null;
     }
 
     @Override
-    public Telefono findById(Integer num) {
+    public Phone findById(Integer num) {
         return null;
     }
 
     @Override
-    public void create(Telefono telefono) {
+    public void create(Phone telefono) {
 
     }
 
     @Override
-    public void delete(Telefono telefono) {
+    public void delete(Phone telefono) {
 
     }
 
@@ -32,7 +32,7 @@ public class TelefonoPersistranceAdapter implements TelefonoPersistence {
     }
 
     @Override
-    public void update(Telefono telefono) {
+    public void update(Phone telefono) {
 
     }
 }

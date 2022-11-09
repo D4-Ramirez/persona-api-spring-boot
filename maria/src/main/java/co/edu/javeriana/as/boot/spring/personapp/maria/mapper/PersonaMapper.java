@@ -4,7 +4,7 @@
  */
 package co.edu.javeriana.as.boot.spring.personapp.maria.mapper;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.model.Persona;
+import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
 import co.edu.javeriana.as.boot.spring.personapp.maria.entity.PersonaEntity;
 
 /**
@@ -13,7 +13,7 @@ import co.edu.javeriana.as.boot.spring.personapp.maria.entity.PersonaEntity;
  */
 public class PersonaMapper {
     
-    protected Persona toPersonaFromPersonaEntity(PersonaEntity pe){
+    protected Person toPersonaFromPersonaEntity(PersonaEntity pe){
         return null;
     }
 }

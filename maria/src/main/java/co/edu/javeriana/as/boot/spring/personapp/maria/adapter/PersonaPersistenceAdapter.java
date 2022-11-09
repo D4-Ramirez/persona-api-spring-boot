@@ -4,7 +4,7 @@
  */
 package co.edu.javeriana.as.boot.spring.personapp.maria.adapter;
 
-import co.edu.javeriana.as.boot.spring.personapp.domain.model.Persona;
+import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
 import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.PersonaPersistence;
 import java.util.List;
 
@@ -15,22 +15,22 @@ import java.util.List;
 public class PersonaPersistenceAdapter implements PersonaPersistence{
 
     @Override
-    public List<Persona> findAll() {
+    public List<Person> findAll() {
         return null;
     }
 
     @Override
-    public Persona findById(Integer cc) {
+    public Person findById(Integer cc) {
         return null;
     }
 
     @Override
-    public void create(Persona persona) {
+    public void create(Person persona) {
 
     }
 
     @Override
-    public void delete(Persona persona) {
+    public void delete(Person persona) {
 
     }
 
@@ -40,7 +40,7 @@ public class PersonaPersistenceAdapter implements PersonaPersistence{
     }
 
     @Override
-    public void update(Persona persona) {
+    public void update(Person persona) {
 
     }
 
