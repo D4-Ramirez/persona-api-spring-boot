@@ -14,9 +14,9 @@ import java.util.List;
  */
 public interface PersonLogic {
     public List<Person> findAll();
-    public void create(Person person);
-    public void delete(Person person);
-    public void deleteById(Person person);
-    public void update(Person person);
+    public Person findById(Integer id);
+    public boolean create(Person person);
+    public boolean delete(Integer id);
+    public Person update(Integer id, Person person);
     public Integer count();
 }

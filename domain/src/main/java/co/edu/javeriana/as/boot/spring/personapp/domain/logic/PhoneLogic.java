@@ -9,9 +9,9 @@ import java.util.List;
 
 public interface PhoneLogic {
     public List<Phone> findAll();
-    public Phone findByPerson(Person person);
-    public void create(Phone phone);
-    public void delete(String number);
-    public void update(Phone phone);
-    public int count();
+    public Phone findByNumber(String number);
+    public boolean create(Phone phone);
+    public boolean delete(String number);
+    public Phone update(String number, Phone phone);
+    public Integer count();
 }

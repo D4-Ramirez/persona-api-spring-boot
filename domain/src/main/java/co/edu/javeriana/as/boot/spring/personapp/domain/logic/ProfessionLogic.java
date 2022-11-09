@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface ProfessionLogic {
     public List<Profession> findAll();
-    public void create(Profession profession);
-    public void delete(Profession profession);
-    public void deleteById(Profession profession);
-    public void update(Profession profession);
+    public Profession findById(Integer id);
+    public boolean create(Profession profession);
+    public boolean delete(Integer id);
+    public Profession update(Integer id, Profession profession);
     public Integer count();
 }
