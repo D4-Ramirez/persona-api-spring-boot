@@ -1,11 +1,12 @@
 package co.edu.javeriana.as.boot.spring.personapp.maria.adapter;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Profession;
-import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.ProfessionPersistence;
+import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.maria.ProfessionPersistenceMaria;
 
 import java.util.List;
 
-public class ProfesionPersistenceAdapter implements ProfessionPersistence {
+public class ProfesionPersistenceAdapter implements ProfessionPersistenceMaria {
+
     @Override
     public List<Profession> findAll() {
         return null;
@@ -17,22 +18,22 @@ public class ProfesionPersistenceAdapter implements ProfessionPersistence {
     }
 
     @Override
-    public void create(Profession profesion) {
-
+    public boolean create(Profession profession) {
+        return false;
     }
 
     @Override
-    public void delete(Profession profesion) {
-
+    public boolean delete(Integer id) {
+        return false;
     }
 
     @Override
-    public void delete(Integer id) {
-
+    public Profession update(Integer id, Profession profession) {
+        return null;
     }
 
     @Override
-    public void update(Profession profesion) {
-
+    public Integer count() {
+        return null;
     }
 }

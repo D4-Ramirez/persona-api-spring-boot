@@ -11,6 +11,7 @@ import java.util.List;
 @Service
 public class StudyLogicImpl implements StudyLogic {
 
+
     @Override
     public List<Study> findAll() {
         return null;
@@ -27,22 +28,37 @@ public class StudyLogicImpl implements StudyLogic {
     }
 
     @Override
-    public void create(Study study) {
-
+    public Study findById(Profession profession, Person person) {
+        return null;
     }
 
     @Override
-    public void delete(Study study) {
-
+    public boolean create(Study study) {
+        return false;
     }
 
     @Override
-    public void deleteById(Person person) {
-
+    public boolean delete(Profession profession, Person person) {
+        return false;
     }
 
     @Override
-    public void update(Study study) {
+    public boolean deleteByPerson(Person person) {
+        return false;
+    }
 
+    @Override
+    public boolean deleteByProfession(Profession profession) {
+        return false;
+    }
+
+    @Override
+    public Study update(Profession profession, Person person, Study study) {
+        return null;
+    }
+
+    @Override
+    public Integer count() {
+        return null;
     }
 }

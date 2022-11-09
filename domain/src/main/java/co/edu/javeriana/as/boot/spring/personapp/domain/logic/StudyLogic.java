@@ -16,4 +16,5 @@ public interface StudyLogic {
     public boolean deleteByPerson(Person person);
     public boolean deleteByProfession(Profession profession);
     public Study update(Profession profession, Person person, Study study);
+    public Integer count();
 }
