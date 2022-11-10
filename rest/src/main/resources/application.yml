@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: "Persona API Spring Boot REST"
+    description: "This is an application to test multi-module spring boot apps"
