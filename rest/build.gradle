@@ -4,10 +4,10 @@ plugins {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.5.2'
-    compile 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     implementation project(':domain')
+    implementation 'org.springdoc:springdoc-openapi-ui:1.5.2'
     //implementacion db
 }
 
