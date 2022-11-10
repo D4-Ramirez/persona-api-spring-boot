@@ -6,6 +6,7 @@ package co.edu.javeriana.as.boot.spring.personapp.rest.adapter;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PersonLogic;
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,6 +14,7 @@ import java.util.List;
  *
  * @author aasanchez
  */
+@Service
 public class PersonaAppAdapter implements PersonLogic {
     @Override
     public List<Person> findAll(Integer flag) {
