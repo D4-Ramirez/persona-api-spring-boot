@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package co.edu.javeriana.as.boot.spring.personapp.rest.controller.Person;
+package co.edu.javeriana.as.boot.spring.personapp.rest.controller.person;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
 import co.edu.javeriana.as.boot.spring.personapp.rest.adapter.PersonaAppAdapter;
@@ -32,9 +32,13 @@ public class PersonCreateController {
     @Operation(summary = "Create new person", description = "Add a new person to the system", tags = {"Person"})
     @PostMapping(value = "/create")
     @CrossOrigin("*")
-    public ResponseEntity execute(@RequestBody PersonPostRequest request) {
+    public ResponseEntity<Boolean> execute(@RequestBody PersonPostRequest request) {
         Person person = mapper.toPersonFromPersonPostRequest(request);
-        adapter.create(person, 1);
-        return ResponseEntity.status(HttpStatus.CREATED).body(null);
+        boolean res = adapter.create(person, 1);
+        if (res) {
+            return ResponseEntity.status(HttpStatus.CREATED).body(true);
+        } else {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(false);
+        }
     }
 }

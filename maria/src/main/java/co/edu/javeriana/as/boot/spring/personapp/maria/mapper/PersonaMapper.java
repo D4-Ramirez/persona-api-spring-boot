@@ -54,6 +54,8 @@ public class PersonaMapper {
             profession.setId(profesionEntity.getId());
             profession.setDescription(profesionEntity.getDes());
             study.setProfession(profession);
+            profession.getStudies().add(study);
+            study.setProfession(profession);
         }
         return person;
     }
