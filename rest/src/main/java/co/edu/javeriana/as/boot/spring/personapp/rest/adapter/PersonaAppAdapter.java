@@ -4,7 +4,9 @@
  */
 package co.edu.javeriana.as.boot.spring.personapp.rest.adapter;
 
+import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PersonLogic;
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
+import co.edu.javeriana.as.boot.spring.personapp.domain.port.in.rest.PersonAppRest;
 
 import java.util.List;
 
@@ -12,35 +14,35 @@ import java.util.List;
  *
  * @author aasanchez
  */
-public class PersonaAppAdapter implements PersonApp {
+public class PersonaAppAdapter implements PersonLogic {
 
     @Override
-    public List<Person> findAll() {
+    public List<Person> findAll(Integer flag) {
         return null;
     }
 
     @Override
-    public Person findById(Integer cc) {
+    public Person findById(Integer id, Integer flag) {
         return null;
     }
 
     @Override
-    public void create(Person persona) {
-
+    public boolean create(Person person, Integer flag) {
+        return false;
     }
 
     @Override
-    public void delete(Person persona) {
-
+    public boolean delete(Integer id, Integer flag) {
+        return false;
     }
 
     @Override
-    public void delete(Integer cc) {
-
+    public Person update(Integer id, Person person, Integer flag) {
+        return null;
     }
 
     @Override
-    public void update(Person persona) {
-
+    public Integer count(Integer flag) {
+        return null;
     }
 }

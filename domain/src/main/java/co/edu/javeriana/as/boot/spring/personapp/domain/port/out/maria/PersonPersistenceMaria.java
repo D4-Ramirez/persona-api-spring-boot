@@ -5,11 +5,12 @@
 package co.edu.javeriana.as.boot.spring.personapp.domain.port.out.maria;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.logic.PersonLogic;
+import co.edu.javeriana.as.boot.spring.personapp.domain.port.out.PersonPortOut;
 
 /**
  *
  * @author aasanchez
  */
-public interface PersonPersistenceMaria extends PersonLogic {
+public interface PersonPersistenceMaria extends PersonPortOut {
 
 }

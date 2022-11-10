@@ -13,10 +13,10 @@ import java.util.List;
  * @author aasanchez
  */
 public interface PersonLogic {
-    public List<Person> findAll();
-    public Person findById(Integer id);
-    public boolean create(Person person);
-    public boolean delete(Integer id);
-    public Person update(Integer id, Person person);
-    public Integer count();
+    public List<Person> findAll(Integer flag);
+    public Person findById(Integer id, Integer flag);
+    public boolean create(Person person, Integer flag);
+    public boolean delete(Integer id, Integer flag);
+    public Person update(Integer id, Person person, Integer flag);
+    public Integer count(Integer flag);
 }
