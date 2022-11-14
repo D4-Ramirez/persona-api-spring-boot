@@ -5,7 +5,7 @@
 package co.edu.javeriana.as.boot.spring.personapp.rest.controller.person;
 
 import co.edu.javeriana.as.boot.spring.personapp.domain.model.Person;
-import co.edu.javeriana.as.boot.spring.personapp.rest.adapter.PersonaAppAdapter;
+import co.edu.javeriana.as.boot.spring.personapp.rest.adapter.PersonAppAdapter;
 import co.edu.javeriana.as.boot.spring.personapp.rest.mapper.PersonRestMapper;
 import co.edu.javeriana.as.boot.spring.personapp.rest.request.PersonPostRequest;
 import io.swagger.v3.oas.annotations.Operation;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name="Person", description = "Person REST API")
 public class PersonCreateController {
     @Autowired
-    private PersonaAppAdapter adapter;
+    private PersonAppAdapter adapter;
 
     @Autowired
     private PersonRestMapper mapper;

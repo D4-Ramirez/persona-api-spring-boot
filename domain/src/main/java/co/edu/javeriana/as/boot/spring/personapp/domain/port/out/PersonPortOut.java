@@ -13,10 +13,10 @@ import java.util.List;
  * @author aasanchez
  */
 public interface PersonPortOut {
-    public List<Person> findAll();
-    public Person findById(Integer id);
-    public boolean create(Person person);
-    public boolean delete(Integer id);
-    public Person update(Integer id, Person person);
-    public Integer count();
+    List<Person> findAll();
+    Person findById(Integer id);
+    boolean create(Person person);
+    boolean delete(Integer id);
+    Person update(Integer id, Person person);
+    Integer count();
 }

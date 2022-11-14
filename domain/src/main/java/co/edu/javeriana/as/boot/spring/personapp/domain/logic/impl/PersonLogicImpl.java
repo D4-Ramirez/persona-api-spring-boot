@@ -20,11 +20,11 @@ import java.util.List;
  */
 @Service
 public class PersonLogicImpl implements PersonLogic {
-
     @Autowired
     private PersonPersistenceMaria personPersistenceMaria;
     @Autowired
     private PersonPersistenceMongo personPersistenceMongo;
+
     @Override
     public List<Person> findAll(Integer flag) {
         switch (flag){

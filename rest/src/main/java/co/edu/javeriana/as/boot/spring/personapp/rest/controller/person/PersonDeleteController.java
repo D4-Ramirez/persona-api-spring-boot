@@ -1,7 +1,6 @@
 package co.edu.javeriana.as.boot.spring.personapp.rest.controller.person;
 
-import co.edu.javeriana.as.boot.spring.personapp.rest.adapter.PersonaAppAdapter;
-import co.edu.javeriana.as.boot.spring.personapp.rest.mapper.PersonRestMapper;
+import co.edu.javeriana.as.boot.spring.personapp.rest.adapter.PersonAppAdapter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/person")
-@Tag(name="Person", description = "Person REST API")
+@Tag(name = "Person", description = "Person REST API")
 public class PersonDeleteController {
     @Autowired
-    private PersonaAppAdapter adapter;
+    private PersonAppAdapter adapter;
 
     @Operation(summary = "Delete a person", description = "Delete a person that's already in the system", tags = {"Person"})
     @DeleteMapping(value = "/delete/{id}")
